@@ -1,0 +1,44 @@
+{
+  "name": "cylon-wemo",
+  "description": "Cylon module for Belkin WeMo",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.7.0"
+  },
+  "dependencies": {
+    "cylon": "^0.22.1",
+    "node-ssdp": "^2.1.0",
+    "request": "^2.55.0",
+    "xml2js": "^0.4.8"
+  },
+  "peerDependencies": {
+    "cylon": "^0.22.1"
+  },
+  "licenses": [
+    {
+      "name": "The MIT License (MIT)",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "homepage": "http://cylonjs.com",
+  "bugs": "https://github.com/ChrisTheBaron/cylon-wemo/issues",
+  "author": "Chris Taylor <christhebaron@gmail.com> (http://www.christhebaron.co.uk)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisTheBaron/cylon-wemo.git"
+  },
+  "keywords": [
+    "cylon",
+    "cylonjs",
+    "belkin",
+    "wemo",
+    "power",
+    "switch",
+    "home",
+    "automation"
+  ]
+}
