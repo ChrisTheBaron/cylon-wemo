@@ -83,6 +83,7 @@ Thank you!
   * For git help see [progit](http://git-scm.com/book) which is an awesome (and free) book on git
   
 ## Release History
-1.0.0 - Can get and state of switch.
+- 1.1.0 - Added check in construct for host connection.
+- 1.0.0 - Can get and state of switch.
 ## License
 Copyright (c) 2015 Chris Taylor. See `LICENSE` for more details
