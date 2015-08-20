@@ -10,14 +10,11 @@
     "sinon-chai": "^2.7.0"
   },
   "dependencies": {
-    "cylon": "^0.22.1",
-    "node-ssdp": "^2.1.0",
-    "request": "^2.55.0",
+    "cylon": "^1.1.0",
+    "node-ssdp": "^2.5.1",
+    "request": "^2.61.0",
     "sync-request": "^2.0.1",
-    "xml2js": "^0.4.8"
-  },
-  "peerDependencies": {
-    "cylon": "^0.22.1"
+    "xml2js": "^0.4.10"
   },
   "licenses": [
     {
