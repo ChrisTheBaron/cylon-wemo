@@ -21,44 +21,44 @@ var Cylon = require('cylon');
 
 Cylon.robot({
 
-    connections: {
-        wemo: {
-            adaptor: 'wemo', ip: "192.168.0.4", port: 49153
-        }
-    },
+	connections: {
+		wemo: {
+			adaptor: 'wemo', ip: "192.168.0.8", port: 49153
+		}
+	},
 
-    devices: {
-        switch: {
-            driver: 'wemo'
-        }
-    },
+	devices: {
+		switch: {
+			driver: 'wemo'
+		}
+	},
 
-    work: function (my) {
+	work: function (my) {
 
-        my.switch.setBinaryState(0, function (err, result) {
-            console.log(err, result);
+		my.switch.setBinaryState(1, function (err, result) {
+			console.log(err, result);
 
-            my.switch.getBinaryState(function (err, result) {
-                console.log(err, result);
+			my.switch.getBinaryState(function (err, result) {
+				console.log(err, result);
 
-                setTimeout(function () {
+				setTimeout(function () {
 
-                    my.switch.setBinaryState(1, function (err, result) {
-                        console.log(err, result);
+					my.switch.setBinaryState(0, function (err, result) {
+						console.log(err, result);
 
-                        my.switch.getBinaryState(function (err, result) {
-                            console.log(err, result);
+						my.switch.getBinaryState(function (err, result) {
+							console.log(err, result);
 
-                        })
+						})
 
-                    });
+					});
 
-                }, 5000);
+				}, 5000);
 
-            })
+			})
 
-        });
-    }
+		});
+	}
 }).start();
 ```
 ## How to Connect
@@ -83,7 +83,9 @@ Thank you!
   * For git help see [progit](http://git-scm.com/book) which is an awesome (and free) book on git
   
 ## Release History
+- 1.2.0 - Updates to latest dependencies
 - 1.1.0 - Added check in construct for host connection.
 - 1.0.0 - Can get and state of switch.
+
 ## License
 Copyright (c) 2015 Chris Taylor. See `LICENSE` for more details
